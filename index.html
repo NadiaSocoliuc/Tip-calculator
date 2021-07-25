@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Tip Calculator</h1>
+        <div id="calculator">
+          <form>
+            <p>The total bill<p>
+                <input id="totalBillAmount" type="text" placeholder="Bill Amount">
+  
+                <p>Service level<p>
+                
+                  <input type="radio" name="rating" value="0.3" id="rating1">
+                  <label for="rating1">Outstanding-30%</label><br>
+                  <input type="radio" name="rating" value="0.2" id="rating2">
+                  <label for="rating2">Good-20%</label><br>  
+                  <input type="radio" name="rating" value="0.15" id="rating3">
+                  <label for="rating3">OKish-15%</label><br>
+                  <input type="radio" name="rating" value="0.10" id="rating4">
+                  <label for="rating4">Bad-10%</label><br>
+                  <input type="radio" name="rating" value="0" id="rating5">
+                  <label for="rating5">Never coming back-0%</label><br>
+              
+          <p>Number of persons that are splitting the bill</p>
+          <input id="personsNumber" type="text" placeholder="Number of persons">
+
+          <button type="button" id="calculate">Calculate</button>
+          </form>
+        </div>
+        <!--calculator end-->
+        <div id="totalTip">
+          <span id="tip">0.00</span>
+        </div>
+        <!--totalTip end-->
+      </div>
+      <!--container end-->
+      
+    <script src="./script.js"></script>
+</body>
+</html>
